@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .payment h2{
+            position: relative;
+            left: 45%;
+            line-height: 30px;
+            word-spacing: 5px;
+        }
+        .payment button{
+            position: relative;
+            left: 15%;
+            width: 70%;
+            height: 60px;
+            line-height: 30px;
+            border: none;
+            font-size: larger;
+            font-family: cursive;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="payment">
+        <h2>Payment Mode</h2>
+        <button onclick="cash()">Cash on Delivery</button><br>
+        <br>
+        <button onclick="card()">Debit/Credit Card</button><br>
+        <br>
+        <button onclick="upi()">UPI</button><br>
+    </div>
+    
+    <script>
+        function cash(){
+            window.location.href="Project 4.html";
+        }
+        function card(){
+            window.location.href="Project 5.html";
+        }
+        function upi(){
+            window.location.href="Project 6.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family='Franklin Gothic Medium'">
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       body{
+        background: #ddd;
+        text-transform: capitalize;
+       }
+       .container{
+        width: 100%;
+        height: auto;
+       }
+       .search h1{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       }
+       .sbox{ display: flex;
+        justify-content: center;
+       align-items: center;}
+      .sbox input{
+       height: 30px;
+       width: 400px;
+       border: none;
+       padding-top: 0;}
+       .sbox ::placeholder{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        padding-left: 30%;
+        color: #48a48a;
+    }
+        .container .productlist{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: left;
+            padding-top: 100px;
+        }
+        .container .product img{
+            height: 300px ;
+            width: 300px;
+        }
+        .product h3{
+            padding-top: 5px;
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 300;
+            
+        }
+        .product h4{
+            padding: 3px;
+            color: #48a448;
+            font-weight: 500;
+        }
+   
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="search">
+        <h1>Products</h1></div>
+        <div class="sbox">
+        <input type="search" name="" id="inp" placeholder="serach the products" onkeyup="search()">
+    </div>
+    <marqee>hiiii welcome</marqee>
+ <div class="productlist">
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/v/r/u/1-kookaburra-black-english-willow-long-handle-01-na-grade-1-original-imagz3xkch7zgkvv.jpeg?q=70">
+        <h3>Kookabura Classic</h3>
+        <h4>$1050  <del>$2250</del></h4>
+        <button onclick="buy()">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/3/2/0/-original-imagnc7xhffvn52p.jpeg?q=70">
+        <h3>Kookabura blue</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/7/v/o/1-nicolls-max-long-handle-1-grade-1-willow-master-original-imagmfjmfs7cphz8.jpeg?q=70">
+        <h3>gray nicolas</h3>
+        <h4>$1500  <del>$2950</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/a/s/a/-original-imagnc7wyxhsmk4z.jpeg?q=70">
+        <h3>sg sunridges</h3>
+        <h4>$1050  <del>$2250</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/o/q/c/1-high-quality-4-slot-tennis-bat-popular-willow-short-handle-original-imaguf6gj5zxvfrh.jpeg?q=70">
+        <h3>mrf masters</h3>
+        <h4>$1050  <del>$2250</del></h4>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/o/u/s/1-250-adidas-xt-elite-6-na-grade-1-sg-savge-edition-bat-original-imagghekztzwgs8d.jpeg?q=70">
+        <h3>addidas green</h3>
+        <h4>$1900  <del>$2700</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/3/2/0/-original-imagnc7xhffvn52p.jpeg?q=70">
+        <h3>puma blue</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/m/z/0/-original-imagnc7w95grkhgz.jpeg?q=70">
+        <h3>Reebok cool</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/y/q/f/1150-1200-sher-short-handle-cb122-7-grade-1-spartan-spirit-original-imagh4fuageqygdw.jpeg?q=70">
+        <h3>spartan </h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/jkk1hu80/bat/6/g/j/1162-ms-dhoni-spartan-short-handle-9332921115046-spartan-original-imaf7vhz4xddudyg.jpeg?q=70">
+        <h3>ss ton</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/stick/b/o/f/hockey-sticks-for-men-and-women-practice-and-beginner-level-wood-original-imagq6bqdgrsb7yt.jpeg?q=70">
+        <h3>hockey navi</h3>
+        <h4>$2200  <del>$4000</del></h4>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/jkh6m4w0/stick/d/t/r/hockey-stick-scoop-wood-37-flash-original-imaf7thgkh5n8ctj.jpeg?q=70">
+        <h3>hockey vampire</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/l3khsi80/racquet/q/j/u/g4-4-1-2-inches-strung-vxt-1100-21-1-vxt-1100-350-tennis-racquet-original-imagens2gh6kzrej.jpeg?q=70">
+        <h3>Tennis bat puma</h3>
+        <h4>$7000  <del>$9000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-ball/l/r/a/standard-cricket-club-cork-ball-match-grade-heavy-duty-7-26-2-original-imagpkythrbyy2vc.jpeg?q=70">
+        <h3>gray nicolas pink  cricket ball</h3>
+        <h4>$500  <del>$550</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/b/s/j/163-cricket-ball-standard-22-4-6-na-cricket-leather-ball-vs-original-imaghzhpy6gu3zym.jpeg?q=70">
+        <h3>Kookabura red ball cricket</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/l45xea80/ball/a/o/d/90-cricket-tennis-ball-florescent-green-pack-of-2-standard-original-imagf49yzvzgddra.jpeg?q=70">
+        <h3>tennis ball</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/y/c/m/160-165-dimple-turf-match-field-hockey-ball-training-practice-original-imagnbfg7qmftfrm.jpeg?q=70">
+        <h3>hockey ball</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/d/u/m/400-425-shining-star-5-22-1-fb-292-football-nivia-original-imagk5g5arkwaa8x.jpeg?q=70">
+        <h3>addidas football blue</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/y/b/j/-original-imagjpzyvhqhg9xs.jpeg?q=70">
+        <h3>addidas football black</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/z/u/e/-original-imagnweam8mehzxe.jpeg?q=70">
+        <h3>puma football green</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/j/w/k/-original-imagkgh7whrab5u6.jpeg?q=70">
+        <h3>puma football gray</h3>
+        <h4>$1000  <del>$2000</del></h4>
+        <button>Buy Now</button>
+   
+
+ </div>
+</div>
+<script>
+    // document.getElementById('inp').addEventListener("keypress",keyfun)
+    // function keyfun(){
+    //    var a=document.getElementById('pro');
+    //     for(var i=0;i<=a.length;i++){
+    //         var val=document.getElementById('inp').value.toUpperCase();
+    //         if(a[i].innerHTML.toUpperCase().indexof(val) != -1){
+    //             a[i].style.display = 'block';
+            
+    //         else
+    //         a[i].style.display = 'none';
+    //         }
+    //     }
+    //     }
+    // document.getElementById('inp').addEventListener("keyup",keyfun())
+    
+    function search(){
+        let a=document.getElementById('inp').value.toUpperCase();
+        let b=document.querySelectorAll('.product');
+        let c=document.getElementsByTagName('h3');
+
+        for(var i=0;i<=c.length;i++)
+        {
+           let d=b[i].getElementsByTagName('h3')[0];
+
+           let value=d.innerHTML || d.innerText || d.textContent;
+           
+           if(value.toUpperCase().indexOf(a) > -1)
+           {
+            b[i].style.display="";
+           }
+           else
+           {
+            b[i].style.display="none";
+           }
+
+        }
+
+        
+    }
+    function buy(){
+            window.location.href="Project 3.html";
+        }
+
+</script>
+
+</body>
+</html>

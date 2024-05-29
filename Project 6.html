@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            .carddetails{
+                border-style: double;
+                background-color: azure;
+            }
+            .carddetails form{
+                position: relative;
+                left: 40%;
+            }
+            .carddetails input{
+                font-size: xx-large;
+            }
+            .carddetails label{
+                font-size: xx-large;
+            }
+            .carddetails h1{
+                font-size: 60px;
+            }
+            .address h3{
+                font-size: 40px;
+            }
+            .address label{
+                font-size: xx-large;
+            }
+            .address input{
+                font-size: xx-large;
+                position: relative;
+                left: 20px;
+            }
+            .address{
+                border-style: double;
+                background-color: azure;
+            }
+            button{
+                width: 100%;
+                height: 50px;
+                border: none;
+                font-size: x-large;
+            }
+            span{
+                color: red;
+            }
+        </style>
+    
+        <div class="carddetails">
+            <h1>UPI Details</h1>
+    <form name="myform1">
+        <label>UPI ID</label><br>
+        <input type="text" name="cn"><br>
+        <span id="a6"></span>
+        <br>
+        <label>Password</label><br>
+        <input type="text" name="ccn"><br>
+        <span id="a7"></span>
+        <br>
+       
+    </form>
+        </div>
+        <div class="address">
+            <form name="myform">
+            <h3>Delivery Address</h3>
+            <label>D.No</label>
+            <input type="number" name="dno" required><br>
+            <span id="a1"></span><br>
+            <br>
+            <label>Street Name</label>
+            <input type="text" name="stname" required><br>
+            <span id="a2"></span><br>
+            <br>
+            <label>City</label>
+            <input type="text" name="city"><br>
+            <span id="a3"></span><br>
+            <br>
+            <label>Pincode</label>
+            <input type="text" name="pin"><br>
+            <span id="a4"></span><br>
+            <br>
+            <label>Landmark</label>
+            <input type="text" name="land"><br></div><br>
+            <span id="a5"></span>
+            <br>
+            </form>
+            
+            <button onclick="msg()">SUBMIT</button>
+            <script>
+                function msg(){
+                    var a=document.myform.dno.value;
+            var b=document.myform.stname.value;
+            var c=document.myform.city.value;
+            var d=document.myform.pin.value;
+            var e=document.myform.land.value;
+    
+            var f=document.myform1.cn.value;
+            var g=document.myform1.ccn.value;
+           
+            if(a==""||a==null){
+                document.getElementById("a1").innerHTML="invalid D.no";
+            }
+            if(b==""||b==null){
+                document.getElementById("a2").innerHTML="invalid Street name";
+            }
+            if(c==""||c==null){
+                document.getElementById("a3").innerHTML="invalid city";
+            }
+            if(d==""||d==null){
+                document.getElementById("a4").innerHTML="invalid pincode";
+            }
+            if(e==""||e==null){
+                document.getElementById("a5").innerHTML="invalid landmark";
+            }
+            if(f==""||f==null){
+                document.getElementById("a6").innerHTML="invalid UPI ID";
+            }
+            if(g==""||g==null){
+                document.getElementById("a7").innerHTML="invalid Password";
+            }
+           
+    
+            else{
+                    window.location.href="Project 7.html";
+                }
+                }
+            </script>
+    </body>
+    </html>

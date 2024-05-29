@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .address h3{
+            font-size: 40px;
+        }
+        .address label{
+            font-size: xx-large;
+        }
+        .address input{
+            font-size: xx-large;
+            position: relative;
+            left: 20px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            position: relative;
+            left: 20%;
+            border: none;
+            font-size: x-large;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="address">
+        <form name="myform">
+        <h3>Delivery Address</h3>
+        <label>D.No</label>
+        <input type="number" name="dno" required><br>
+        <span id="a1"></span><br>
+        <br>
+        <label>Street Name</label>
+        <input type="text" name="stname" required><br>
+        <span id="a2"></span><br>
+        <br>
+        <label>City</label>
+        <input type="text" name="city"><br>
+        <span id="a3"></span><br>
+        <br>
+        <label>Pincode</label>
+        <input type="text" name="pin"><br>
+        <span id="a4"></span><br>
+        <br>
+        <label>Landmark</label>
+        <input type="text" name="land"><br></div><br>
+        <span id="a5"></span><br>
+        <br></form>
+        <button onclick="msg()">SUBMIT</button>
+        <script>
+            function msg(){
+                var a=document.myform.dno.value;
+        var b=document.myform.stname.value;
+        var c=document.myform.city.value;
+        var d=document.myform.pin.value;
+        var e=document.myform.land.value;
+        if(a==""||a==null){
+            document.getElementById("a1").innerHTML="invalid D.no";
+        }
+        if(b==""||b==null){
+            document.getElementById("a2").innerHTML="invalid Street name";
+        }
+        if(c==""||c==null){
+            document.getElementById("a3").innerHTML="invalid city";
+        }
+        if(d==""||d==null){
+            document.getElementById("a4").innerHTML="invalid pincode";
+        }
+        if(e==""||e==null){
+            document.getElementById("a5").innerHTML="invalid landmark";
+        }
+        else{
+                window.location.href="Project 7.html";
+            }
+            }
+        </script>
+</body>
+</html>
